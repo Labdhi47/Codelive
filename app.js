@@ -8,8 +8,6 @@ function compile() {
     const prefixedKey = PREFIX + key;
     const jsonValue = localStorage.getItem(prefixedKey);
 
-// JS full form is Java Script
-  
     if (jsonValue != null) return JSON.parse(jsonValue);
   });
   setInitial(data);
